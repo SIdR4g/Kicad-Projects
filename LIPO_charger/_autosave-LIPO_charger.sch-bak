@@ -1,0 +1,160 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Battery_Management:MCP73831-2-OT U?
+U 1 1 61A1FB9D
+P 5600 3450
+F 0 "U?" H 5600 3931 50  0000 C CNN
+F 1 "MCP73831-2-OT" H 5600 3840 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5650 3200 50  0001 L CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 5450 3400 50  0001 C CNN
+	1    5600 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61A204DC
+P 5050 3850
+F 0 "R?" H 5109 3896 50  0000 L CNN
+F 1 "R_Small" H 5109 3805 50  0000 L CNN
+F 2 "" H 5050 3850 50  0001 C CNN
+F 3 "~" H 5050 3850 50  0001 C CNN
+	1    5050 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61A2091A
+P 4450 3600
+F 0 "R?" H 4509 3646 50  0000 L CNN
+F 1 "R_Small" H 4509 3555 50  0000 L CNN
+F 2 "" H 4450 3600 50  0001 C CNN
+F 3 "~" H 4450 3600 50  0001 C CNN
+	1    4450 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 61A20CC9
+P 4450 3100
+F 0 "D?" V 4489 2982 50  0000 R CNN
+F 1 "LED" V 4398 2982 50  0000 R CNN
+F 2 "" H 4450 3100 50  0001 C CNN
+F 3 "~" H 4450 3100 50  0001 C CNN
+	1    4450 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61A2169B
+P 3950 3100
+F 0 "C?" H 4042 3146 50  0000 L CNN
+F 1 "C_Small" H 4042 3055 50  0000 L CNN
+F 2 "" H 3950 3100 50  0001 C CNN
+F 3 "~" H 3950 3100 50  0001 C CNN
+	1    3950 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61A21853
+P 6500 2950
+F 0 "C?" H 6592 2996 50  0000 L CNN
+F 1 "C_Small" H 6592 2905 50  0000 L CNN
+F 2 "" H 6500 2950 50  0001 C CNN
+F 3 "~" H 6500 2950 50  0001 C CNN
+	1    6500 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A21F3A
+P 5600 4200
+F 0 "#PWR?" H 5600 3950 50  0001 C CNN
+F 1 "GND" H 5605 4027 50  0000 C CNN
+F 2 "" H 5600 4200 50  0001 C CNN
+F 3 "" H 5600 4200 50  0001 C CNN
+	1    5600 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3550 5050 3550
+Wire Wire Line
+	5050 3550 5050 3750
+Wire Wire Line
+	5600 3750 5600 4050
+Wire Wire Line
+	5050 3950 5050 4050
+Wire Wire Line
+	5050 4050 5600 4050
+Connection ~ 5600 4050
+Wire Wire Line
+	5600 4050 5600 4200
+$Comp
+L power:VBUS #PWR?
+U 1 1 61A24363
+P 5600 2800
+F 0 "#PWR?" H 5600 2650 50  0001 C CNN
+F 1 "VBUS" H 5615 2973 50  0000 C CNN
+F 2 "" H 5600 2800 50  0001 C CNN
+F 3 "" H 5600 2800 50  0001 C CNN
+	1    5600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2800 5600 2850
+$Comp
+L power:VBUS #PWR?
+U 1 1 61A24773
+P 3950 2850
+F 0 "#PWR?" H 3950 2700 50  0001 C CNN
+F 1 "VBUS" H 3965 3023 50  0000 C CNN
+F 2 "" H 3950 2850 50  0001 C CNN
+F 3 "" H 3950 2850 50  0001 C CNN
+	1    3950 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A249F7
+P 3950 3400
+F 0 "#PWR?" H 3950 3150 50  0001 C CNN
+F 1 "GND" H 3955 3227 50  0000 C CNN
+F 2 "" H 3950 3400 50  0001 C CNN
+F 3 "" H 3950 3400 50  0001 C CNN
+	1    3950 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2850 3950 3000
+Wire Wire Line
+	3950 3200 3950 3400
+Wire Wire Line
+	4450 3250 4450 3500
+Wire Wire Line
+	4450 3700 4450 4450
+Wire Wire Line
+	4450 4450 6000 4450
+Wire Wire Line
+	6000 4450 6000 3550
+Wire Wire Line
+	4450 2950 4450 2850
+Wire Wire Line
+	4450 2850 5600 2850
+Connection ~ 5600 2850
+Wire Wire Line
+	5600 2850 5600 3150
+$EndSCHEMATC
